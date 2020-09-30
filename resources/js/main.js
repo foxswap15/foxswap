@@ -6,7 +6,8 @@ $(window).resize(function () {
 });
 
 
-
+window.sr = ScrollReveal();
+sr.reveal('.reveal', { duration: 1000 });
 
 // CIRCLE 
 
