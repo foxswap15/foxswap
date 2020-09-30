@@ -34,3 +34,15 @@
 
 }
 
+
+/*Responsive test*/
+@media (max-width:991px){section.roadmap .box{margin-top:30px}}@media (min-width:992px){section.roadmap .box.left:after{content:'after';width:80px;height:3px;background:#ccc;position:absolute;top:50%;right:-80px;color:#fff;text-align:center;z-index:1}
+section.roadmap .box.right:after{content:'after';width:70px;height:3px;background:#ccc;position:absolute;top:50%;left:-70px;color:#fff;text-align:center;z-index:1}}
+
+@media (min-width:992px){section.roadmap .box.right.first{margin-top:110px !important}
+  section.roadmap .box.right.second{top:45px !important}
+  section.roadmap .box.right.third{top:88px !important}
+  section.roadmap .box.left.second{top:-65px !important}
+  section.roadmap .box.left.third{top:-20px !important}
+  section.roadmap .box.left.fourth{top:24px !important}}
+
