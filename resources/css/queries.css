@@ -20,6 +20,11 @@
         font-size: 30px !important;
         text-align: center;
     }
+
+    .left-1 {
+        margin-left: 0 !important;
+      } 
+      
     
 }
 

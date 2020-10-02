@@ -1,4 +1,21 @@
 
+$( document ).ready(function() {
+
+ $('.js--scoll').waypoint(function(direction) {
+     if (direction == "down") {
+         $('nav').addClass('sticky');
+     } else {
+         $('nav').removeClass('sticky');
+     }
+ }, {
+   offset: '60px;'
+ });
+
+});
+
+
+
+
 $(window).resize(function () {
     if ($(window).width() == '700') {
         $("#logo").remove()
