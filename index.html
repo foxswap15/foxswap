@@ -28,10 +28,10 @@
     <header>
       <!-- Navigation -->
       <div class="">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-bottom sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-dark navbar-inverse navbar-fixed-top ">
           <div class="container-fluid">
             <a class="navbar-branch" href="#">
-              <img src="./resources/img/logofs.png" height="75px" style="margin-left: 204px"/>
+              <img id="logo-nav" src="./resources/img/logofs.png" height="75px"/>
             </a>
             <button
               class="navbar-toggler"
@@ -272,9 +272,43 @@
                 <h3 style="margin-top: 40px">Token Allocation FOX</h3>
                 <br />
 
-                <div  class="column">
+                <!-- <div  class="column">
                   <div style="margin-left: auto !important; margin-right: auto !important;" class="donut-chart" data-donut-chart="1"></div>
-                </div>
+                </div> -->
+
+                <!-- 
+Built following Scratch-made SVG Donut & Pie Charts in HTML5
+https://medium.com/@heyoka/scratch-made-svg-donut-pie-charts-in-html5-2c587e935d72
+
+Attempted adding some sort of interaction. Buggy interactions when hovering over the center half of the section. Might give ChartJS a try.
+-->
+
+<svg style="margin-left: 135px;" width="50%" height="50%" viewbox="0 0 42 42" class="donut-chart">
+	<circle class="donut-hole" cx="21" cy="21" r="15.91549430918952" fill="#fff"></circle>
+	
+	<circle 
+		class="donut-segment" 
+		cx="21" cy="21" r="15.91549430918952" fill="transparent" 
+		stroke="#00BCD4" stroke-width="10" 
+		stroke-dasharray="40 60" stroke-dashoffset="25"
+	></circle>
+	<circle 
+		class="donut-segment" 
+		cx="21" cy="21" r="15.91549430918952" fill="transparent" 
+		stroke="#673AB7" stroke-width="10" 
+		stroke-dasharray="25 75" stroke-dashoffset="85"
+	></circle>
+	<circle 
+		class="donut-segment" 
+		cx="21" cy="21" r="15.91549430918952" fill="transparent" 
+		stroke="#E91E63" stroke-width="10" 
+		stroke-dasharray="35 65" stroke-dashoffset="60"
+	></circle>
+	<g class="chart-text">
+		<text x="50%" y="50%" class="chart-number">101</text>
+		<text x="50%" y="50%" class="chart-label">Credit Hours</text>
+	</g>
+</svg>
 
                 <div class="details">
                   <p class="long-copy"> <b style="font-weight: 500;">Details:</b> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
